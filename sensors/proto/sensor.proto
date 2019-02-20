@@ -10,6 +10,7 @@ option go_package = "lib";
 message Dht22 {
     float Temperature = 1;
     float Humidity = 2;
+    int32 RetryCount = 3;
 }
 
 message SensorReading {
