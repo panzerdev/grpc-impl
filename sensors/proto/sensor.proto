@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+//option java_package = "de.example.package";
+//option java_multiple_files = true;
+
+option go_package = "lib";
+
+message Dht22 {
+    float Temperature = 1;
+    float Humidity = 2;
+}
+
+message SensorReading {
+    string Id = 1;
+    string Location = 2;
+    Dht22 dht22 = 3;
+}
+
+service SensorReportingService {
+    rpc StreamReadings (stream SensorReading) returns (google.protobuf.Empty);
+}
