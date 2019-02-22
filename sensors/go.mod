@@ -1,4 +1,4 @@
-module github.com/panzerdev/grpc-impl/sensors/lib
+module github.com/panzerdev/grpc-impl/sensors/sensor
 
 require (
 	github.com/golang/protobuf v1.2.0

@@ -7,7 +7,7 @@ package sensor;
 //option java_package = "de.example.package";
 //option java_multiple_files = true;
 
-option go_package = "lib";
+//option go_package = "sensor";
 
 message Dht22 {
     float Temperature = 1;
