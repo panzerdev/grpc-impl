@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
+//import "google/api/annotations.proto";
 
 package sensor;
 
@@ -22,5 +23,5 @@ message SensorReading {
 }
 
 service SensorReportingService {
-    rpc StreamReadings (stream SensorReading) returns (google.protobuf.Empty);
+    rpc StreamReadings (stream SensorReading) returns (google.protobuf.Empty) {}
 }
